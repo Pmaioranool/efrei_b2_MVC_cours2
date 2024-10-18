@@ -8,9 +8,8 @@ function afficherArticles()
     $articles = getArticle();
     include('view/accueil.php');
 }
-function afficherFOOTArticles()
+function afficherCate()
 {
-
-    $articles = getFOOTArticle();
+    $articles = getCate($_GET['cat']);
     include('view/accueil.php');
 }

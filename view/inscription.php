@@ -1,9 +1,9 @@
 <h1>Inscription</h1>
-<form action="">
+<form action="" method="post">
     nom
     <input type="text" name="nom"><br>
     Prénom
-    <input type="text" name="Prénom"><br>
+    <input type="text" name="prenom"><br>
     tel
     <input type="text" name="tel"><br>
     email

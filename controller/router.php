@@ -3,15 +3,17 @@ $page = (isset($_GET['page'])) ? $_GET['page'] : 'accueil';
 
 switch ($page) {
     case 'categorie':
+        include_once('controller/articlesController.php');
+        afficherCate();
         break;
     case 'inscription':
-        include('view/inscription.php');
+        include_once('controller/usersController.php');
+        inscription();
         break;
     case 'connexion':
-        include('view/connexion.php');
+        include_once('view/connexion.php');
         break;
     default:
-        include('controller/articlesController.php');
-        // afficherArticles();
-        afficherFOOTArticles();
+        include_once('controller/articlesController.php');
+        afficherArticles();
 }
